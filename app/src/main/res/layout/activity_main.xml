@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hlq.androidtransitionanimations.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getOverridePendingTransition"
+        android:text="使用overridePendingTransition跳转Activity动画"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getStyleActivity"
+        android:text="使用Style跳转Activity动画"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getActivityOptions"
+        android:text="使用ActivityOptions跳转Activity动画"
+        android:textAllCaps="false"
+        android:transitionName="activityOption" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/img1"
+        android:scaleType="centerCrop"
+        android:transitionName="img1" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getActivityOptionsMore"
+        android:text="使用ActivityOptions控制多个共享元素跳转Activity动画"
+        android:textAllCaps="false"
+        android:transitionName="btn1" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getActivityOptionSlide"
+        android:text="使用Slide跳转Activity动画"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getActivityOptionsExplode"
+        android:text="使用Explode跳转Activity动画"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getActivityOptionsFade"
+        android:text="使用Fade跳转Activity动画"
+        android:textAllCaps="false" />
+
+</android.support.v7.widget.LinearLayoutCompat>
